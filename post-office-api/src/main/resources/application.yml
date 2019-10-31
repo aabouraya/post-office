@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: post-office
+  mail:
+    host: localhost
+    port: 2525
+    username: admin
+    password: admin
+    properties:
+      mail:
+        smtp:
+          auth: false
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: emails
+          group: mails-group
+#  thymeleaf:
+#    template-resolver-order: "classpath:/templates"
+#    cache: false
+
+
+#eureka:
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    service-url:
+#      defaultZone: "http://localhost:8761/eureka/"
+
+
+logging:
+  level:
+    org:
+      thymeleaf: trace

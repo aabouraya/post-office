@@ -1,0 +1,3 @@
+rootProject.name = 'post-office'
+include 'post-office-contract'
+include 'post-office-api'
