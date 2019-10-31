@@ -4,9 +4,6 @@ plugins {
 
 allprojects {
     apply plugin: 'java'
-
-    group = 'com.knowhow'
-    version = '1.0-SNAPSHOT'
 }
 
 
@@ -26,28 +23,3 @@ subprojects {
     }
 }
 
-//
-//apply plugin: 'base'
-//
-//    subprojects {
-//    plugins {
-//    id 'org.springframework.boot' version '2.1.8.RELEASE'
-//    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
-//    id 'java'
-//}
-//ext {
-//    set('springCloudVersion', "Greenwich.SR3")
-//}
-//dependencyManagement {
-//    imports {
-//        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-//    }
-//}
-//        apply plugin: 'java'
-//
-//        repositories {
-//            mavenCentral()
-//        }
-//    }
-//
-//
