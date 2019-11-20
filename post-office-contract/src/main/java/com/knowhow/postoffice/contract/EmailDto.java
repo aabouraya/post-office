@@ -14,6 +14,6 @@ public class EmailDto {
 
     private String subject;
     private String to;
-    private String text;
+    private Template template;
     private Map<String, Object> model;
 }

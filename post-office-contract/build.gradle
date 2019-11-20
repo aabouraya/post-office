@@ -1,4 +1,10 @@
-dependencies {
-//	 implementation 'org.projectlombok:lombok'
-//	 annotationProcessor 'org.projectlombok:lombok'
+plugins {
+    id 'maven-publish'
+}
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }

@@ -4,6 +4,7 @@ plugins {
 
 allprojects {
     apply plugin: 'java'
+    apply plugin: 'maven-publish'
 }
 
 
@@ -11,9 +12,11 @@ allprojects {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'io.freefair.lombok'
+    apply plugin: 'maven-publish'
 
     repositories {
         mavenCentral()
+        mavenLocal()
     }
 
     sourceCompatibility = '1.8'

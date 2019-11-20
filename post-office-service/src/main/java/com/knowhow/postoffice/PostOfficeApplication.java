@@ -6,9 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Sink;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
-//@EnableDiscoveryClient
+@EnableAsync
 @EnableBinding(Sink.class)
 @EnableConfigurationProperties({AppProperties.class})
 public class PostOfficeApplication {

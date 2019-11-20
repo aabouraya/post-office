@@ -33,3 +33,6 @@ logging:
   level:
     org:
       thymeleaf: trace
+post-office:
+  app:
+    from-email: "noreply@shield.com"
